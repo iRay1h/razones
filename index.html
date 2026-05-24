@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Un espacio lleno de amor, solo para ti" />
+  <title>Para Ti, Mi Amor ❤️</title>
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" aria-hidden="true">
+    <span class="loader-corazon">💌</span>
+    <p class="loader-texto">Preparando algo especial para ti...</p>
+    <div class="loader-barra">
+      <div class="loader-progreso"></div>
+    </div>
+  </div>
+
+  <!-- ===== PARTÍCULAS ===== -->
+  <div class="particulas" id="particulas" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav role="navigation" aria-label="Navegación principal">
+    <a href="#hero" class="nav-logo">❤️ Para Ti</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#razones">Razones</a></li>
+      <li><a href="#cartas">Cartas</a></li>
+      <li><a href="#momentos">Momentos</a></li>
+      <li><a href="#promesas">Promesas</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" aria-label="Bienvenida">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-etiqueta">Solo para ti</div>
+      <h1 class="hero-titulo">
+        Un espacio hecho<br>con <em>todo mi amor</em>
+      </h1>
+      <p class="hero-subtitulo">
+        Porque hay palabras que el corazón no puede guardar solo
+      </p>
+      <span class="hero-corazon" aria-hidden="true">💕</span>
+      <a href="#razones" class="hero-cta">
+        <span>Descubrirlo</span>
+        <span aria-hidden="true">↓</span>
+      </a>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-linea"></div>
+      <span>Desliza</span>
+    </div>
+  </section>
+
+  <!-- ===== RAZONES ===== -->
+  <section id="razones" aria-label="Razones por las que te amo">
+    <div class="seccion-header">
+      <div class="seccion-etiqueta">Desde el corazón</div>
+      <h2 class="seccion-titulo">Las razones por las que<br><em>te amo</em></h2>
+      <div class="seccion-linea" aria-hidden="true">
+        <span>✦</span>
+      </div>
+    </div>
+    <div class="razones-grid" id="razonesGrid">
+      <!-- Las razones se generan desde cartas.js -->
+    </div>
+  </section>
+
+  <!-- ===== CARTAS ===== -->
+  <section id="cartas" aria-label="Cartas para ti">
+    <div class="seccion-header">
+      <div class="seccion-etiqueta">Palabras del alma</div>
+      <h2 class="seccion-titulo">Cartas escritas<br><em>para ti</em></h2>
+      <div class="seccion-linea" aria-hidden="true">
+        <span>✦</span>
+      </div>
+    </div>
+    <div class="cartas-grid" id="cartasGrid">
+      <!-- Las cartas se generan desde cartas.js -->
+    </div>
+  </section>
+
+  <!-- ===== MOMENTOS ===== -->
+  <section id="momentos" aria-label="Nuestros momentos">
+    <div class="seccion-header">
+      <div class="seccion-etiqueta">Memoria del corazón</div>
+      <h2 class="seccion-titulo">Nuestros <em>momentos</em></h2>
+      <div class="seccion-linea" aria-hidden="true">
+        <span>✦</span>
+      </div>
+    </div>
+    <div class="momentos-grid" id="momentosGrid">
+      <!-- 
+        INSTRUCCIONES PARA AGREGAR FOTOS:
+        
+        Opción 1 - Reemplaza los placeholders por imágenes:
+        <div class="momento-item">
+          <img src="assets/images/TU_FOTO.jpg" alt="Descripción del momento" />
+          <div class="momento-overlay">
+            <p class="momento-overlay-texto">✦ Descripción del momento</p>
+          </div>
+        </div>
+        
+        Opción 2 - Deja los placeholders con el texto que quieras:
+        Edita el texto dentro de .momento-placeholder > p
+      -->
+      <div class="momento-item">
+        <div class="momento-placeholder">
+          <span>📷</span>
+          <p>Tu foto favorita<br>de nosotros aquí</p>
+        </div>
+      </div>
+      <div class="momento-item">
+        <div class="momento-placeholder">
+          <span>🌅</span>
+          <p>Un atardecer<br>juntos</p>
+        </div>
+      </div>
+      <div class="momento-item">
+        <div class="momento-placeholder">
+          <span>🎂</span>
+          <p>Un cumpleaños<br>especial</p>
+        </div>
+      </div>
+      <div class="momento-item">
+        <div class="momento-placeholder">
+          <span>🌿</span>
+          <p>Nuestro lugar<br>favorito</p>
+        </div>
+      </div>
+      <div class="momento-item">
+        <div class="momento-placeholder">
+          <span>🌙</span>
+          <p>Momento que<br>no olvidaré</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROMESAS ===== -->
+  <section id="promesas" aria-label="Mis promesas">
+    <div class="seccion-header">
+      <div class="seccion-etiqueta">Desde lo más profundo</div>
+      <h2 class="seccion-titulo">Mis <em style="color: var(--dorado-claro);">promesas</em> para ti</h2>
+      <div class="seccion-linea" aria-hidden="true">
+        <span>✦</span>
+      </div>
+    </div>
+    <div class="promesas-grid" id="promesasGrid">
+      <!-- Las promesas se generan desde cartas.js -->
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <span class="footer-corazon">Hecho con todo mi amor ❤️</span>
+    <p class="footer-texto">Solo para ti &nbsp;·&nbsp; Solo contigo &nbsp;·&nbsp; Para siempre</p>
+  </footer>
+
+  <!-- ===== MODAL DE CARTA ===== -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <article class="modal-carta" id="modalCarta">
+      <div class="modal-carta-sobre">
+        <button class="modal-cerrar" id="modalCerrar" aria-label="Cerrar carta">✕</button>
+        <div class="modal-carta-sobre-inner">
+          <div class="modal-carta-sello" aria-hidden="true">💌</div>
+        </div>
+      </div>
+      <div class="modal-carta-contenido">
+        <div class="modal-carta-lineas" aria-hidden="true"></div>
+        <p class="modal-carta-fecha" id="modalFecha"></p>
+        <p class="modal-carta-para" id="modalPara"></p>
+        <h2 class="modal-carta-titulo" id="modalTitulo"></h2>
+        <div class="modal-carta-texto" id="modalTexto"></div>
+        <div class="modal-carta-firma">
+          <p class="modal-carta-firma-texto" id="modalFirma"></p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/cartas.js"></script>
+  <script>
+    // ==========================================
+    //  INICIALIZACIÓN Y LÓGICA PRINCIPAL
+    // ==========================================
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // === LOADER ===
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 2400);
+      document.body.style.overflow = 'hidden';
+
+      // === PARTÍCULAS FLOTANTES ===
+      const particulas = document.getElementById('particulas');
+      const simbolos = ['❤️', '🌸', '✨', '💕', '🌹', '💫', '🦋', '🌙'];
+
+      function crearParticula() {
+        const el = document.createElement('span');
+        el.className = 'particula';
+        el.textContent = simbolos[Math.floor(Math.random() * simbolos.length)];
+        el.style.left = Math.random() * 100 + 'vw';
+        el.style.fontSize = (0.6 + Math.random() * 0.8) + 'rem';
+        const duracion = 8 + Math.random() * 12;
+        const delay = Math.random() * 6;
+        el.style.animation = `flotar ${duracion}s linear ${delay}s infinite`;
+        particulas.appendChild(el);
+        setTimeout(() => el.remove(), (duracion + delay + 1) * 1000);
+      }
+
+      // Crear partículas cada 1.5 segundos
+      let contadorParticulas = 0;
+      const intervaloParticulas = setInterval(() => {
+        crearParticula();
+        contadorParticulas++;
+        if (contadorParticulas > 40) clearInterval(intervaloParticulas);
+      }, 1500);
+
+      // Re-iniciar cada 60 segundos
+      setInterval(() => {
+        contadorParticulas = 0;
+        for (let i = 0; i < 5; i++) setTimeout(crearParticula, i * 800);
+      }, 60000);
+
+      // === HAMBURGER MENU ===
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+
+      hamburger.addEventListener('click', () => {
+        const abierto = navLinks.classList.toggle('abierto');
+        hamburger.setAttribute('aria-expanded', abierto);
+      });
+
+      // Cerrar al hacer click en un enlace
+      navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          navLinks.classList.remove('abierto');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // === RENDERIZAR RAZONES ===
+      const razonesGrid = document.getElementById('razonesGrid');
+      if (window.razonesData) {
+        window.razonesData.forEach((razon, i) => {
+          const card = document.createElement('article');
+          card.className = 'razon-card';
+          card.style.transitionDelay = (i * 0.08) + 's';
+          card.innerHTML = `
+            <div class="razon-numero">${String(i + 1).padStart(2, '0')}</div>
+            <span class="razon-emoji" aria-hidden="true">${razon.emoji}</span>
+            <h3 class="razon-titulo">${razon.titulo}</h3>
+            <p class="razon-texto">${razon.texto}</p>
+          `;
+          razonesGrid.appendChild(card);
+        });
+      }
+
+      // === RENDERIZAR CARTAS ===
+      const cartasGrid = document.getElementById('cartasGrid');
+      if (window.cartasData) {
+        window.cartasData.forEach((carta, i) => {
+          const tarjeta = document.createElement('article');
+          tarjeta.className = 'carta-tarjeta';
+          tarjeta.style.transitionDelay = (i * 0.1) + 's';
+          tarjeta.innerHTML = `
+            <div class="carta-tarjeta-header">
+              <span class="carta-tarjeta-sobre" aria-hidden="true">💌</span>
+              <p class="carta-tarjeta-fecha">${carta.fecha}</p>
+            </div>
+            <div class="carta-tarjeta-body">
+              <h3 class="carta-tarjeta-titulo">${carta.titulo}</h3>
+              <p class="carta-tarjeta-preview">${carta.preview}</p>
+            </div>
+            <button class="btn-abrir-carta" data-carta-id="${carta.id}" aria-label="Abrir carta: ${carta.titulo}">
+              ✉️ Abrir carta
+            </button>
+          `;
+          cartasGrid.appendChild(tarjeta);
+        });
+
+        // Eventos para abrir cartas
+        document.querySelectorAll('.btn-abrir-carta').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const id = parseInt(btn.dataset.cartaId);
+            abrirCarta(id);
+          });
+        });
+      }
+
+      // === RENDERIZAR PROMESAS ===
+      const promesasGrid = document.getElementById('promesasGrid');
+      if (window.promesasData) {
+        window.promesasData.forEach((promesa, i) => {
+          const item = document.createElement('div');
+          item.className = 'promesa-item';
+          item.style.transitionDelay = (i * 0.07) + 's';
+          item.innerHTML = `
+            <span class="promesa-emoji" aria-hidden="true">${promesa.emoji}</span>
+            <p class="promesa-texto">${promesa.texto}</p>
+          `;
+          promesasGrid.appendChild(item);
+        });
+      }
+
+      // === MODAL DE CARTA ===
+      const modalOverlay = document.getElementById('modalOverlay');
+      const modalCerrar = document.getElementById('modalCerrar');
+
+      function abrirCarta(id) {
+        const carta = window.cartasData.find(c => c.id === id);
+        if (!carta) return;
+
+        document.getElementById('modalFecha').textContent = carta.fecha;
+        document.getElementById('modalPara').textContent = carta.para;
+        document.getElementById('modalTitulo').textContent = carta.titulo;
+        document.getElementById('modalTexto').textContent = carta.contenido;
+        document.getElementById('modalFirma').innerHTML = carta.firma.replace('\n', '<br>');
+
+        modalOverlay.classList.add('activo');
+        document.body.style.overflow = 'hidden';
+
+        // Foco para accesibilidad
+        setTimeout(() => modalCerrar.focus(), 100);
+      }
+
+      function cerrarCarta() {
+        modalOverlay.classList.remove('activo');
+        document.body.style.overflow = '';
+      }
+
+      modalCerrar.addEventListener('click', cerrarCarta);
+      modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) cerrarCarta();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalOverlay.classList.contains('activo')) {
+          cerrarCarta();
+        }
+      });
+
+      // === SCROLL REVEAL (Intersection Observer) ===
+      const observador = new IntersectionObserver((entradas) => {
+        entradas.forEach(entrada => {
+          if (entrada.isIntersecting) {
+            entrada.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      // Observar elementos animados
+      function observarElementos() {
+        document.querySelectorAll('.razon-card, .carta-tarjeta, .promesa-item').forEach(el => {
+          observador.observe(el);
+        });
+      }
+
+      // Esperar a que se rendericen los elementos
+      setTimeout(observarElementos, 100);
+
+    }); // DOMContentLoaded
+  </script>
+
+</body>
+</html>
