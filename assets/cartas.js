@@ -38,6 +38,45 @@ porque asi te veo yo, como mi superheroina, la niña mas poderosa de el universo
 
 `,
     firma: "Con todo mi amor,\nYo"
+  },
+
+  {
+    id: 2,
+    titulo: "Tu bajo mis ojos",
+    fecha: "25/05/2026",
+    para: "Para mi superheroina",
+    preview: "Mis ojos te ven como nadie mas te ve",
+    contenido: `Que si me gustas? que si te amo? la pregunta ofende, tu eres... tu eres mi superheroina, tu eres mi niña
+tu, a mis ojos, eres la niña mas linda de el universo, y no solo a mis ojos, ERES la mas linda de el universo, y no me importa lo que otros opinen
+tu siempre seras la mas linda de todas, las otras personas no saben lo que dicen, sabes por que? porque tu para mi, eres como
+
+Tu para mi eres como el cielo de una galaxia muy lejana, porque tu belleza no se puede comparar con nada que hayamos visto
+
+Tu para mi eres como una h2r, porque me gustas mas que nada en el mundo
+
+Tu para mi eres como descubrir un nuevo mundo, porque siempre hay cosas nuevas contigo
+
+Tu para mi eres como jugar jueguitos durante horas, porque no importa cuantas horas pase contigo, jamas me aburrire
+
+Tu para mi eres como escuchar musica a todo volumen, porque tu voz es la vibracion de el aire mas hermosa que he escuchado
+
+Tu para mi eres como un porsche 911 gt3 rs, porque tu carroceria esta fabricado por la mejor ingenieria alemana
+
+Tu para mi eres como mbappe en la final de el mundo de 2022, porque no te rindes aunque tengas todo en tu contra
+
+Tu para mi eres como cristiano ronaldo llegando a el madrid en 2009, porque conocerte fue como si el Madrid hubiera fichado al Cristiano del 2008
+
+Tu para mi eres como comer salchipapa, porque aunque la coma mil veces, nunca deja de hacerme feliz
+
+Tu para mi eres como Eve para Mark, porque despues de que alguien te haga sentir inservible, llegara alguien que te hara ser invencible
+
+
+Y aunque haga chistes, referencias raras o comparaciones tontas, quiero que nunca dudes de algo: te amo de una forma que jamas habia sentido con nadie
+
+
+
+`,
+    firma: "Desde lo mas profundo de mi corazón,\nYo"
   }
 ];
 
