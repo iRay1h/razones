@@ -77,6 +77,37 @@ Y aunque haga chistes, referencias raras o comparaciones tontas, quiero que nunc
 
 `,
     firma: "Desde lo mas profundo de mi corazón,\nYo"
+  },
+
+  {
+    id: 3,
+    titulo: "medio año juntitos",
+    fecha: "10/06/2026",
+    para: "La reina de mi corazon",
+    preview: "Una cartita supermega especial para mi persona favorita en este mundo",
+    contenido: `Menas, hoy cumplimos medio año juntitos, y creeme que me hace mas feliz que a nadie en el mundo,
+    ahora mismo no hay nadie mas feliz que yo, porque tengo a la niña mas linda de el mundo conmigo
+
+    tu ser la mejor, durante estos 6 meses me haz dado mas que nadie en este mundo, me diste cosas que
+    todo hombre quisiera tener en este mundo, ME DISTE UNA ADO, que mas puedo pedir yo en este mundo?
+
+    me diste mi primer venidita KAJSKASJKSAJ me diste mi primer amor real, mi primer amor que de verdad es
+    correspoondido, me diste todo tu ser, te entregaste a mi, yo me entregue a ti, estoy profundamente
+    enamorado de ti.
+
+    es curioso sabes? contigo a sido con quien mas he peleado, pero con quien mas e durado, 6 meses amor, puedes creerlo? quiero que esto se multiplique por 3.000.000
+    porque sabes? te amo 3.000.000
+
+    tu eres mi kryptonita, mi debilidad, porque eres muy linda, tierna, bella, hermosa, me amas y eres la mejor que puede haber
+    yo se que a veces soy un tonto, te hago enojar, te decepciono, pero te amo como a nadie nunca.
+
+    contigo quiero soy la persona mas feliz de el mundo, lo siento mucho por cosas que he hecho, en serio, pero te amo.
+
+    a veces pienso que no te merezco, porque eres demasiado buena para mi, MUY buena, mua mua
+
+
+`,
+    firma: "Tu noviecito,\nYo"
   }
 ];
 
