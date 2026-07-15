@@ -116,27 +116,61 @@ Y aunque haga chistes, referencias raras o comparaciones tontas, quiero que nunc
     fecha: "15/07/2025",
     para: "Para ti",
     preview: "Jamas vas a estar sola, jamas",
-    contenido: `Menas, soy yo, si, despues de mucho tiempo, y si, ya se que quizas lo ponga porque me lo pediste
-    pero no es asi, en parte si, porque la verdad no se, no sabia que poner aca la verdad, cada que vienes escondo el ramo porque tengo una parte, pero es practicamente nada.
-    pero, no estamos para hablar de eso, estoy aca para decirte que te amo, que eres la mejor, que nunca estaras sola.
+    contenido: `Menas, soy yo.
 
-    Cuando tu madre te moleste, ahi estare yo para apoyarte, si estas triste, estare yo para apoyarte,
-    si no puedes pensar bien, ahi estare yo para ayudarte a pensar, si estas enojada, estoy yo, si te sientes mal,
-    triste, frustrada, ahi estoy yo, porque te amo, porque siempre estare para ti, no hay dia que no este para ti, siempre lo estare...
+Después de mucho tiempo vuelvo a escribirte aquí. La verdad nunca sé muy bien qué poner. Sé que alguna vez me dijiste que escribiera más cartas, y sí, en parte esta está aquí por eso, pero sobre todo porque quería recordarte algo que nunca quiero que olvides.
 
-    y si no estoy yo, tienes a mas personas, tienes a camila, a tu familia, a todos, todos te apoyamos.
-    si algo me llega a suceder... bueno, me da miedo pensar en eso, no quisiera que eso pase, y mucho menos si ese dia quizas peleemos o algo asi...
-    me genera miedo que eso pueda pasar, pero se que no pasara, porque estoy aqui para ti y siempre lo estare, porque cada que manejo, pienso en ti.
+Te amo.
 
-    Y bueno, la verdad yo queria el llaverito, supongo que aun no llega, eso me haria manejar con mas seguridad, sentiria que tengo siempre una parte de ti.
-    porque asi como tu tienes siempre una parte de mi contigo, con el collarsito (perdon por el otro), yo quisiera llevar algo tuyo siempre, aunque fuera una manilla
-    porque me haces falta siempre, quiero estar contigo, siempre, cada dia de mi vida te extraño. te amo muchisimo.
+Y quiero que sepas que nunca vas a estar sola.
 
-    perdon si esto es raro, pero no se, a mi tambien me gustaria que me dieras cositas, y pues, te lo puedo expresar aqui, te amo tanto, y jamas estaras sola.
+Cuando tu mamá te moleste, ahí voy a estar para apoyarte. Si estás triste, ahí voy a estar. Si un día no puedes pensar con claridad, pensaré contigo. Si estás enojada, frustrada o simplemente tienes un mal día, quiero que recuerdes que siempre podrás contar conmigo.
 
-    No eres un fracaso, que lo sepas, todos tenemos nuestro ritmo, tu solo tienes un poco de mala suerte, pero, no hay afanes, ya estas mas cerca de el otro año que de este.
-    no te sientas mal, en serio, todo a su momento. ya el proximo año te mudas con tus abuelos en lo posible y puedes entrar ya sea a el sena o a la U. pero si no, aca estoy yo
-    para acompañarte en tu proceso
+Porque te amo.
+
+Y porque no hay un solo día en el que no quiera estar para ti. Siempre voy a hacer todo lo posible por acompañarte, escucharte y ayudarte cuando lo necesites.
+
+Y si algún día yo no puedo resolver algo, recuerda que tampoco estás sola. Tienes a Camila, tienes a tu familia y tienes a muchas personas que te quieren. Todos queremos verte bien.
+
+Cada vez que manejo pienso en ti. Pienso en volver para abrazarte otra vez, para seguir haciendo recuerdos contigo y para seguir viviendo todo lo que nos falta. Tú eres una de las razones por las que siempre quiero llegar bien.
+
+Y bueno... la verdad sigo esperando el llaverito. Supongo que todavía no llega.
+
+Me haría mucha ilusión tenerlo, porque sentiría que siempre llevo una parte de ti conmigo. Así como tú llevas una parte de mí con tu collarcito (perdón otra vez por el anterior), yo también quisiera llevar algo tuyo todos los días. Aunque fuera una manillita, un llavero o cualquier cosita.
+
+No porque importe cuánto cueste, sino porque cada detalle que viene de ti tiene un valor enorme para mí.
+
+Te extraño muchísimo cuando no estás. Hay días en los que simplemente quisiera pasar todo el tiempo contigo. Me haces falta incluso cuando hablamos todos los días. Supongo que así se siente amar a alguien de verdad.
+
+Y te voy a confesar algo. A mí también me hace muy feliz cuando me das detallitos. No porque los necesite, sino porque me encanta sentir que también piensas en mí de esa manera. Quería decírtelo aquí, porque contigo quiero ser completamente sincero.
+
+Y ahora quiero decirte algo que espero que nunca olvides.
+
+No eres un fracaso.
+
+Nunca lo has sido.
+
+Solo estás viviendo las cosas a tu propio ritmo, y eso está bien. A veces la vida simplemente pone más obstáculos en el camino de unas personas que de otras, pero eso no significa que valgan menos.
+
+Confío muchísimo en ti.
+
+Sé que puedes lograr grandes cosas, aunque a veces tú misma no lo veas.
+
+Ya falta menos para que llegue el próximo año. Ojalá puedas mudarte con tus abuelos como lo hemos hablado y empezar esa nueva etapa, ya sea en el SENA o en la universidad. Y si las cosas no salen exactamente como las planeamos, tampoco pasa nada.
+
+Yo voy a estar ahí.
+
+Voy a acompañarte en cada paso de ese proceso, celebrando tus logros, levantándote cuando tropieces y recordándote quién eres cuando tú misma lo olvides.
+
+Porque te amo.
+
+Y porque, pase lo que pase...
+
+Nunca vas a estar sola.
+
+Con amor,
+
+
 
 
 `,
