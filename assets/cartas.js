@@ -112,18 +112,35 @@ Y aunque haga chistes, referencias raras o comparaciones tontas, quiero que nunc
 
   {
     id: 4,
-    // Esta carta está pendiente a propósito: es el espacio para la carta nueva.
-    // Cuando la tengas lista, solo llena titulo, fecha, para, preview y contenido,
-    // y cambia pendiente a false para que se abra como las demás.
-    pendiente: true,
-    titulo: "Una carta nueva está en camino",
-    fecha: "",
+    titulo: "No estas sola",
+    fecha: "15/07/2025",
     para: "Para ti",
-    preview: "Todavía la estoy escribiendo con mucho cariño...",
-    contenido: `
+    preview: "Jamas vas a estar sola, jamas",
+    contenido: `Menas, soy yo, si, despues de mucho tiempo, y si, ya se que quizas lo ponga porque me lo pediste
+    pero no es asi, en parte si, porque la verdad no se, no sabia que poner aca la verdad, cada que vienes escondo el ramo porque tengo una parte, pero es practicamente nada.
+    pero, no estamos para hablar de eso, estoy aca para decirte que te amo, que eres la mejor, que nunca estaras sola.
+
+    Cuando tu madre te moleste, ahi estare yo para apoyarte, si estas triste, estare yo para apoyarte,
+    si no puedes pensar bien, ahi estare yo para ayudarte a pensar, si estas enojada, estoy yo, si te sientes mal,
+    triste, frustrada, ahi estoy yo, porque te amo, porque siempre estare para ti, no hay dia que no este para ti, siempre lo estare...
+
+    y si no estoy yo, tienes a mas personas, tienes a camila, a tu familia, a todos, todos te apoyamos.
+    si algo me llega a suceder... bueno, me da miedo pensar en eso, no quisiera que eso pase, y mucho menos si ese dia quizas peleemos o algo asi...
+    me genera miedo que eso pueda pasar, pero se que no pasara, porque estoy aqui para ti y siempre lo estare, porque cada que manejo, pienso en ti.
+
+    Y bueno, la verdad yo queria el llaverito, supongo que aun no llega, eso me haria manejar con mas seguridad, sentiria que tengo siempre una parte de ti.
+    porque asi como tu tienes siempre una parte de mi contigo, con el collarsito (perdon por el otro), yo quisiera llevar algo tuyo siempre, aunque fuera una manilla
+    porque me haces falta siempre, quiero estar contigo, siempre, cada dia de mi vida te extraño. te amo muchisimo.
+
+    perdon si esto es raro, pero no se, a mi tambien me gustaria que me dieras cositas, y pues, te lo puedo expresar aqui, te amo tanto, y jamas estaras sola.
+
+    No eres un fracaso, que lo sepas, todos tenemos nuestro ritmo, tu solo tienes un poco de mala suerte, pero, no hay afanes, ya estas mas cerca de el otro año que de este.
+    no te sientas mal, en serio, todo a su momento. ya el proximo año te mudas con tus abuelos en lo posible y puedes entrar ya sea a el sena o a la U. pero si no, aca estoy yo
+    para acompañarte en tu proceso
+
 
 `,
-    firma: "Tu noviecito,\nYo"
+    firma: "la cosa esa que te ama,\nYo"
   }
 ];
 
