@@ -108,6 +108,22 @@ Y aunque haga chistes, referencias raras o comparaciones tontas, quiero que nunc
 
 `,
     firma: "Tu noviecito,\nYo"
+  },
+
+  {
+    id: 4,
+    // Esta carta está pendiente a propósito: es el espacio para la carta nueva.
+    // Cuando la tengas lista, solo llena titulo, fecha, para, preview y contenido,
+    // y cambia pendiente a false para que se abra como las demás.
+    pendiente: true,
+    titulo: "Una carta nueva está en camino",
+    fecha: "",
+    para: "Para ti",
+    preview: "Todavía la estoy escribiendo con mucho cariño...",
+    contenido: `
+
+`,
+    firma: "Tu noviecito,\nYo"
   }
 ];
 
@@ -145,6 +161,16 @@ const razones = [
     emoji: "🦋",
     titulo: "Lo que me enseñas",
     texto: "TU, tu me haz enseñado mas de mi de lo que incluso yo se, tu me haz hecho mejor persona, tu eres la mejor, me enseñas demasiadas cosas, y te amo por eso, porque quiero estar junto a ti toda la vida para seguir aprendiendo de la mejor, de ti"
+  },
+  {
+    emoji: "😂",
+    titulo: "Tu risa",
+    texto: "Tu risa es probablemente mi sonido favorito en el mundo, literal podria escucharla en loop toda mi vida y jamas me cansaria, y si es una risa boba por algo tonto que dije, mucho mejor"
+  },
+  {
+    emoji: "🏡",
+    titulo: "Lo fácil que es todo contigo",
+    texto: "Contigo hasta los días mas aburridos se sienten bien, no necesito planes grandes ni nada especial, con solo estar hablando contigo o viendote, ya es suficiente para hacerme feliz"
   }
 ];
 
@@ -160,10 +186,97 @@ const promesas = [
   { emoji: "🎉", texto: "Celebraré cada logro tuyo" },
   { emoji: "🌊", texto: "Estaré en las buenas y en las malas" },
   { emoji: "☀️", texto: "Seré tu luz en los días oscuros" },
-  { emoji: "❤️", texto: "Te amaré todos los días de mi vida" }
+  { emoji: "❤️", texto: "Te amaré todos los días de mi vida" },
+  { emoji: "😂", texto: "Te haré reír incluso en tus peores días" },
+  { emoji: "🎧", texto: "Guardaré cada canción que me recuerde a ti" },
+  { emoji: "🧡", texto: "Elegiré quedarme, una y otra vez" },
+  { emoji: "🔒", texto: "Seré tu lugar seguro siempre" }
+];
+
+// ============================
+//  NUESTRA HISTORIA (línea de tiempo)
+// ============================
+// Edita fechas y textos con los momentos reales de ustedes.
+// El emoji "★" marca el hito más importante si quieres resaltarlo con CSS.
+
+const historia = [
+  {
+    fecha: "10 dic 2025",
+    emoji: "✨",
+    titulo: "El día que todo empezó",
+    texto: "Dos personas que ni siquiera se imaginaban al otro como amigo, y el destino decidió juntarlas de todas formas."
+  },
+  {
+    fecha: "23 may 2026",
+    emoji: "💌",
+    titulo: "La primera carta",
+    texto: "\"Dos personas, un corazón\": la primera vez que puse en palabras todo lo que sentía por ti."
+  },
+  {
+    fecha: "25 may 2026",
+    emoji: "🦸‍♀️",
+    titulo: "SuperYesica",
+    texto: "Te escribí una carta llena de comparaciones tontas, porque no encontraba otra forma de decirte lo mucho que me gustas."
+  },
+  {
+    fecha: "10 jun 2026",
+    emoji: "🎉",
+    titulo: "Medio año juntos",
+    texto: "6 meses después seguíamos ahí, peleando de vez en cuando, pero aguantando más que con nadie más."
+  },
+  {
+    fecha: "Hoy",
+    emoji: "🌙",
+    titulo: "Y contando...",
+    texto: "Seguimos sumando días, y pienso seguir sumando muchos, muchos más contigo."
+  }
+];
+
+// ============================
+//  DATOS CURIOSOS SOBRE NOSOTROS
+// ============================
+
+const datosCuriosos = [
+  { emoji: "🎂", texto: "Cumplimos años prácticamente el mismo día. Sí, en serio." },
+  { emoji: "⚪", texto: "Alguien en esta relación es fan del Real Madrid hasta la médula." },
+  { emoji: "🍟", texto: "Una salchipapa nunca, jamás, deja de ser buena idea." },
+  { emoji: "🥇", texto: "Ella le ganó a él discutiendo... más veces de las que él admite." },
+  { emoji: "💬", texto: "\"Aguacatito\" es un apodo que solo ella se gana." },
+  { emoji: "🦸", texto: "Para él, ella es literalmente una superheroína. Sin ironía." }
+];
+
+// ============================
+//  QUIZ / JUEGO DEL AMOR
+// ============================
+// Cada pregunta tiene opciones; todas llevan a un final bonito,
+// así que no hay forma de "perder". Es solo para hacerla sonreír.
+
+const quiz = [
+  {
+    pregunta: "¿Qué se te antoja más ahora mismo?",
+    opciones: ["Una salchipapa 🍟", "Algo dulce 🍫", "Nada, ya estoy feliz aquí 🥰"]
+  },
+  {
+    pregunta: "Si hoy fuera una película, ¿qué género sería?",
+    opciones: ["Comedia romántica 🎬", "Drama con final feliz 🎭", "Una donde nada pasa y aun así es perfecta 🌙"]
+  },
+  {
+    pregunta: "¿Cómo prefieres que te sorprenda la próxima vez?",
+    opciones: ["Con una carta 💌", "Con un plan sorpresa 🎉", "Solo abrazándome fuerte 🤗"]
+  }
+];
+
+const quizFinales = [
+  "Sea cual sea tu respuesta, la verdad es una sola: te amo muchísimo.",
+  "No importa qué elijas, siempre vas a ser mi persona favorita.",
+  "Este juego no tenía forma de perder, porque contigo siempre gano yo."
 ];
 
 // Exportar para uso en index.html
 window.cartasData = cartas;
 window.razonesData = razones;
 window.promesasData = promesas;
+window.historiaData = historia;
+window.datosCuriososData = datosCuriosos;
+window.quizData = quiz;
+window.quizFinalesData = quizFinales;

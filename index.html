@@ -28,6 +28,8 @@
   <nav role="navigation" aria-label="Navegación principal">
     <a href="#hero" class="nav-logo">❤️ Para Ti</a>
     <ul class="nav-links" id="navLinks">
+      <li><a href="#contador">Nosotros</a></li>
+      <li><a href="#historia">Historia</a></li>
       <li><a href="#razones">Razones</a></li>
       <li><a href="#cartas">Cartas</a></li>
       <li><a href="#momentos">Momentos</a></li>
@@ -60,6 +62,29 @@
     <div class="hero-scroll" aria-hidden="true">
       <div class="scroll-linea"></div>
       <span>Desliza</span>
+    </div>
+  </section>
+
+  <!-- ===== CONTADOR ===== -->
+  <section id="contador" aria-label="Tiempo juntos">
+    <div class="contador-caja">
+      <span class="contador-corazon" aria-hidden="true">⏳</span>
+      <p class="contador-numero" id="contadorNumero">0</p>
+      <p class="contador-texto">días creando esta locura bonita, juntos</p>
+    </div>
+  </section>
+
+  <!-- ===== HISTORIA ===== -->
+  <section id="historia" aria-label="Nuestra historia">
+    <div class="seccion-header">
+      <div class="seccion-etiqueta">Cómo empezó todo</div>
+      <h2 class="seccion-titulo">Nuestra <em>historia</em></h2>
+      <div class="seccion-linea" aria-hidden="true">
+        <span>✦</span>
+      </div>
+    </div>
+    <div class="historia-linea" id="historiaLinea">
+      <!-- La línea de tiempo se genera desde cartas.js -->
     </div>
   </section>
 
@@ -101,24 +126,53 @@
       </div>
     </div>
     <div class="momentos-grid" id="momentosGrid">
-      <!-- 
-        INSTRUCCIONES PARA AGREGAR FOTOS:
-        
-        Opción 1 - Reemplaza los placeholders por imágenes:
-        <div class="momento-item">
-          <img src="assets/images/TU_FOTO.jpg" alt="Descripción del momento" />
+      <!--
+        INSTRUCCIONES PARA AGREGAR MÁS FOTOS:
+
+        Foto real (se puede tocar para verla en grande):
+        <div class="momento-item momento-item--foto">
+          <img src="assets/images/TU_FOTO.jpg" alt="Descripción del momento" loading="lazy" />
           <div class="momento-overlay">
             <p class="momento-overlay-texto">✦ Descripción del momento</p>
           </div>
         </div>
-        
-        Opción 2 - Deja los placeholders con el texto que quieras:
-        Edita el texto dentro de .momento-placeholder > p
+
+        Placeholder para cuando aún no tienes la foto:
+        <div class="momento-item">
+          <div class="momento-placeholder">
+            <span>🌅</span>
+            <p>Texto que quieras</p>
+          </div>
+        </div>
       -->
-      <div class="momento-item">
-        <div class="momento-placeholder">
-          <span>📷</span>
-          <p>Tu foto favorita<br>de nosotros aquí</p>
+      <div class="momento-item momento-item--foto">
+        <img src="assets/images/favorita.jpeg" alt="Mi foto favorita de ella" loading="lazy" />
+        <div class="momento-overlay">
+          <p class="momento-overlay-texto">✦ Mi foto favorita tuya</p>
+        </div>
+      </div>
+      <div class="momento-item momento-item--foto">
+        <img src="" alt="" loading="lazy" />
+        <div class="momento-overlay">
+          <p class="momento-overlay-texto"></p>
+        </div>
+      </div>
+      <div class="momento-item momento-item--foto">
+        <img src="assets/images/cumpleanos.jpeg" alt="Tu cumpleaños" loading="lazy" />
+        <div class="momento-overlay">
+          <p class="momento-overlay-texto">✦ Tu cumpleaños</p>
+        </div>
+      </div>
+      <div class="momento-item momento-item--foto">
+        <img src="assets/images/momento.jpeg" alt="Un momento juntos" loading="lazy" />
+        <div class="momento-overlay">
+          <p class="momento-overlay-texto">✦ Un momento que atesoro</p>
+        </div>
+      </div>
+      <div class="momento-item momento-item--foto">
+        <img src="" alt="" loading="lazy" />
+        <div class="momento-overlay">
+          <p class="momento-overlay-texto"></p>
         </div>
       </div>
       <div class="momento-item">
@@ -128,20 +182,49 @@
         </div>
       </div>
       <div class="momento-item">
-        <img src="assets/images/cumpleaños.jpeg">
-      </div>
-      <div class="momento-item">
-        <div class="momento-placeholder">
-          <span>🌿</span>
-          <p>Nuestro lugar<br>favorito</p>
-        </div>
-      </div>
-      <div class="momento-item">
         <div class="momento-placeholder">
           <span>🌙</span>
           <p>Momento que<br>no olvidaré</p>
         </div>
       </div>
+    </div>
+    <p class="momentos-hint">✦ Desliza para ver más ✦</p>
+  </section>
+
+  <!-- ===== LIGHTBOX DE FOTOS ===== -->
+  <div class="lightbox-overlay" id="lightboxOverlay" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <button class="lightbox-cerrar" id="lightboxCerrar" aria-label="Cerrar foto">✕</button>
+    <figure class="lightbox-figura">
+      <img id="lightboxImg" src="" alt="" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <!-- ===== JUEGO DEL AMOR ===== -->
+  <section id="juego" aria-label="Un jueguito para ti">
+    <div class="seccion-header">
+      <div class="seccion-etiqueta">Solo por diversión</div>
+      <h2 class="seccion-titulo">Un <em>jueguito</em> para ti</h2>
+      <div class="seccion-linea" aria-hidden="true">
+        <span>✦</span>
+      </div>
+    </div>
+    <div class="juego-caja" id="juegoCaja">
+      <!-- El juego se genera desde cartas.js -->
+    </div>
+  </section>
+
+  <!-- ===== DATOS CURIOSOS ===== -->
+  <section id="curiosidades" aria-label="Datos curiosos sobre nosotros">
+    <div class="seccion-header">
+      <div class="seccion-etiqueta">Cositas nuestras</div>
+      <h2 class="seccion-titulo">Datos curiosos <em>sobre nosotros</em></h2>
+      <div class="seccion-linea" aria-hidden="true">
+        <span>✦</span>
+      </div>
+    </div>
+    <div class="curiosidades-grid" id="curiosidadesGrid">
+      <!-- Se genera desde cartas.js -->
     </div>
   </section>
 
@@ -161,8 +244,9 @@
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <span class="footer-corazon">Hecho con todo mi amor ❤️</span>
+    <span class="footer-corazon" id="footerCorazon" title="Tócame varias veces...">Hecho con todo mi amor ❤️</span>
     <p class="footer-texto">Solo para ti &nbsp;·&nbsp; Solo contigo &nbsp;·&nbsp; Para siempre</p>
+    <p class="footer-secreto" id="footerSecreto"></p>
   </footer>
 
   <!-- ===== MODAL DE CARTA ===== -->
@@ -274,30 +358,81 @@
       if (window.cartasData) {
         window.cartasData.forEach((carta, i) => {
           const tarjeta = document.createElement('article');
-          tarjeta.className = 'carta-tarjeta';
+          tarjeta.className = 'carta-tarjeta' + (carta.pendiente ? ' carta-tarjeta--pendiente' : '');
           tarjeta.style.transitionDelay = (i * 0.1) + 's';
-          tarjeta.innerHTML = `
-            <div class="carta-tarjeta-header">
-              <span class="carta-tarjeta-sobre" aria-hidden="true">💌</span>
-              <p class="carta-tarjeta-fecha">${carta.fecha}</p>
-            </div>
-            <div class="carta-tarjeta-body">
-              <h3 class="carta-tarjeta-titulo">${carta.titulo}</h3>
-              <p class="carta-tarjeta-preview">${carta.preview}</p>
-            </div>
-            <button class="btn-abrir-carta" data-carta-id="${carta.id}" aria-label="Abrir carta: ${carta.titulo}">
-              ✉️ Abrir carta
-            </button>
-          `;
+
+          if (carta.pendiente) {
+            tarjeta.innerHTML = `
+              <div class="carta-tarjeta-header">
+                <span class="carta-tarjeta-sobre carta-tarjeta-sobre--pendiente" aria-hidden="true">🔒</span>
+                <p class="carta-tarjeta-fecha">Muy pronto</p>
+              </div>
+              <div class="carta-tarjeta-body">
+                <h3 class="carta-tarjeta-titulo">${carta.titulo}</h3>
+                <p class="carta-tarjeta-preview">${carta.preview}</p>
+              </div>
+              <button class="btn-abrir-carta btn-abrir-carta--pendiente" disabled aria-label="Carta aún no disponible">
+                💭 Todavía no está lista
+              </button>
+            `;
+          } else {
+            tarjeta.innerHTML = `
+              <div class="carta-tarjeta-header">
+                <span class="carta-tarjeta-sobre" aria-hidden="true">💌</span>
+                <p class="carta-tarjeta-fecha">${carta.fecha}</p>
+              </div>
+              <div class="carta-tarjeta-body">
+                <h3 class="carta-tarjeta-titulo">${carta.titulo}</h3>
+                <p class="carta-tarjeta-preview">${carta.preview}</p>
+              </div>
+              <button class="btn-abrir-carta" data-carta-id="${carta.id}" aria-label="Abrir carta: ${carta.titulo}">
+                ✉️ Abrir carta
+              </button>
+            `;
+          }
           cartasGrid.appendChild(tarjeta);
         });
 
-        // Eventos para abrir cartas
-        document.querySelectorAll('.btn-abrir-carta').forEach(btn => {
+        // Eventos para abrir cartas (las pendientes no tienen botón activo)
+        document.querySelectorAll('.btn-abrir-carta[data-carta-id]').forEach(btn => {
           btn.addEventListener('click', () => {
             const id = parseInt(btn.dataset.cartaId);
             abrirCarta(id);
           });
+        });
+      }
+
+      // === RENDERIZAR HISTORIA (línea de tiempo) ===
+      const historiaLinea = document.getElementById('historiaLinea');
+      if (window.historiaData && historiaLinea) {
+        window.historiaData.forEach((hito, i) => {
+          const item = document.createElement('div');
+          item.className = 'historia-item';
+          item.style.transitionDelay = (i * 0.1) + 's';
+          item.innerHTML = `
+            <div class="historia-punto" aria-hidden="true">${hito.emoji}</div>
+            <div class="historia-contenido">
+              <p class="historia-fecha">${hito.fecha}</p>
+              <h3 class="historia-titulo">${hito.titulo}</h3>
+              <p class="historia-texto">${hito.texto}</p>
+            </div>
+          `;
+          historiaLinea.appendChild(item);
+        });
+      }
+
+      // === RENDERIZAR DATOS CURIOSOS ===
+      const curiosidadesGrid = document.getElementById('curiosidadesGrid');
+      if (window.datosCuriososData && curiosidadesGrid) {
+        window.datosCuriososData.forEach((dato, i) => {
+          const item = document.createElement('div');
+          item.className = 'curiosidad-item';
+          item.style.transitionDelay = (i * 0.08) + 's';
+          item.innerHTML = `
+            <span class="curiosidad-emoji" aria-hidden="true">${dato.emoji}</span>
+            <p class="curiosidad-texto">${dato.texto}</p>
+          `;
+          curiosidadesGrid.appendChild(item);
         });
       }
 
@@ -367,13 +502,167 @@
 
       // Observar elementos animados
       function observarElementos() {
-        document.querySelectorAll('.razon-card, .carta-tarjeta, .promesa-item').forEach(el => {
+        document.querySelectorAll('.razon-card, .carta-tarjeta, .promesa-item, .momento-item, .historia-item, .curiosidad-item').forEach(el => {
           observador.observe(el);
         });
       }
 
       // Esperar a que se rendericen los elementos
       setTimeout(observarElementos, 100);
+
+      // === LIGHTBOX DE FOTOS (para ver las fotos en grande en el celular) ===
+      const lightboxOverlay = document.getElementById('lightboxOverlay');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxCerrar = document.getElementById('lightboxCerrar');
+
+      document.querySelectorAll('.momento-item--foto').forEach(item => {
+        item.addEventListener('click', () => {
+          const img = item.querySelector('img');
+          const caption = item.querySelector('.momento-overlay-texto');
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightboxCaption.textContent = caption ? caption.textContent.replace('✦', '').trim() : '';
+          lightboxOverlay.classList.add('activo');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function cerrarLightbox() {
+        lightboxOverlay.classList.remove('activo');
+        document.body.style.overflow = '';
+      }
+
+      lightboxCerrar.addEventListener('click', cerrarLightbox);
+      lightboxOverlay.addEventListener('click', (e) => {
+        if (e.target === lightboxOverlay) cerrarLightbox();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightboxOverlay.classList.contains('activo')) cerrarLightbox();
+      });
+
+      // === CONTADOR DE DÍAS JUNTOS ===
+      // Cambia esta fecha por la fecha real de aniversario (formato: 'AAAA-MM-DD')
+      const fechaInicio = new Date('2025-12-10T00:00:00');
+      const contadorNumero = document.getElementById('contadorNumero');
+      const contadorSeccion = document.getElementById('contador');
+
+      function calcularDias() {
+        const ahora = new Date();
+        const diffMs = ahora - fechaInicio;
+        return Math.max(0, Math.floor(diffMs / (1000 * 60 * 60 * 24)));
+      }
+
+      function animarContador(destino) {
+        const duracion = 1600;
+        const inicio = performance.now();
+        function paso(ahora) {
+          const progreso = Math.min((ahora - inicio) / duracion, 1);
+          const facilitado = 1 - Math.pow(1 - progreso, 3);
+          contadorNumero.textContent = Math.floor(facilitado * destino).toLocaleString('es-ES');
+          if (progreso < 1) requestAnimationFrame(paso);
+        }
+        requestAnimationFrame(paso);
+      }
+
+      if (contadorNumero && contadorSeccion) {
+        const observadorContador = new IntersectionObserver((entradas) => {
+          entradas.forEach(entrada => {
+            if (entrada.isIntersecting) {
+              animarContador(calcularDias());
+              observadorContador.disconnect();
+            }
+          });
+        }, { threshold: 0.4 });
+        observadorContador.observe(contadorSeccion);
+      }
+
+      // === CORAZONES AL TOCAR EL CORAZÓN DEL HERO ===
+      const heroCorazon = document.querySelector('.hero-corazon');
+      if (heroCorazon) {
+        heroCorazon.style.cursor = 'pointer';
+        heroCorazon.addEventListener('click', () => {
+          for (let i = 0; i < 8; i++) {
+            setTimeout(() => crearCorazonExplosion(heroCorazon), i * 40);
+          }
+        });
+      }
+
+      function crearCorazonExplosion(origen) {
+        const rect = origen.getBoundingClientRect();
+        const el = document.createElement('span');
+        el.className = 'corazon-explosion';
+        el.textContent = ['❤️', '💕', '💖', '✨'][Math.floor(Math.random() * 4)];
+        el.style.left = (rect.left + rect.width / 2) + 'px';
+        el.style.top = (rect.top + rect.height / 2) + 'px';
+        const angulo = Math.random() * Math.PI * 2;
+        const distancia = 60 + Math.random() * 60;
+        el.style.setProperty('--dx', Math.cos(angulo) * distancia + 'px');
+        el.style.setProperty('--dy', Math.sin(angulo) * distancia + 'px');
+        document.body.appendChild(el);
+        setTimeout(() => el.remove(), 1000);
+      }
+
+      // === JUEGO DEL AMOR (quiz sin forma de perder) ===
+      const juegoCaja = document.getElementById('juegoCaja');
+      if (juegoCaja && window.quizData) {
+        let pasoActual = 0;
+        const respuestas = [];
+
+        function renderPreguntaJuego() {
+          if (pasoActual >= window.quizData.length) {
+            renderFinalJuego();
+            return;
+          }
+          const pregunta = window.quizData[pasoActual];
+          juegoCaja.innerHTML = `
+            <p class="juego-progreso">Pregunta ${pasoActual + 1} de ${window.quizData.length}</p>
+            <h3 class="juego-pregunta">${pregunta.pregunta}</h3>
+            <div class="juego-opciones">
+              ${pregunta.opciones.map((op, i) => `<button class="juego-opcion" data-i="${i}">${op}</button>`).join('')}
+            </div>
+          `;
+          juegoCaja.querySelectorAll('.juego-opcion').forEach(btn => {
+            btn.addEventListener('click', () => {
+              respuestas.push(pregunta.opciones[parseInt(btn.dataset.i)]);
+              pasoActual++;
+              renderPreguntaJuego();
+            });
+          });
+        }
+
+        function renderFinalJuego() {
+          const finalTexto = window.quizFinalesData[Math.floor(Math.random() * window.quizFinalesData.length)];
+          juegoCaja.innerHTML = `
+            <div class="juego-final">
+              <span class="juego-final-emoji" aria-hidden="true">💗</span>
+              <p class="juego-final-texto">${finalTexto}</p>
+              <button class="juego-reiniciar" id="juegoReiniciar">Jugar de nuevo</button>
+            </div>
+          `;
+          document.getElementById('juegoReiniciar').addEventListener('click', () => {
+            pasoActual = 0;
+            respuestas.length = 0;
+            renderPreguntaJuego();
+          });
+        }
+
+        renderPreguntaJuego();
+      }
+
+      // === EASTER EGG DEL FOOTER ===
+      const footerCorazon = document.getElementById('footerCorazon');
+      const footerSecreto = document.getElementById('footerSecreto');
+      if (footerCorazon && footerSecreto) {
+        let toques = 0;
+        footerCorazon.addEventListener('click', () => {
+          toques++;
+          if (toques >= 5 && !footerSecreto.classList.contains('visible')) {
+            footerSecreto.textContent = 'Encontraste el secreto: eres, sin duda, lo mejor que me ha pasado. 🤫💗';
+            footerSecreto.classList.add('visible');
+          }
+        });
+      }
 
     }); // DOMContentLoaded
   </script>
